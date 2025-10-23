@@ -1,6 +1,6 @@
-## Picallry
+## Pixallry
 
-- Picallry is an AI-powered image editing platform that empowers creators, designers, and businesses to transform, enhance, and personalize visuals effortlessly. Built for speed, precision, and creativity, Picallry combines advanced generative AI with an intuitive interface to deliver professional-grade edits in seconds.
+- Pixallry is an AI-powered image editing platform that empowers creators, designers, and businesses to transform, enhance, and personalize visuals effortlessly. Built for speed, precision, and creativity, Picallry combines advanced generative AI with an intuitive interface to deliver professional-grade edits in seconds.
 
 ### Vision:
 
