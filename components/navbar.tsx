@@ -1,7 +1,7 @@
 "use client";
 
 import { signIn, useSession } from "next-auth/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import { Menu, Sparkles, X } from "lucide-react";
 import { Button } from "./ui/button";
@@ -10,6 +10,15 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { data: session } = useSession();
+
+  useEffect(() => {
+    function handleScroll() {
+      setIsScrolled(window.scrollY > 20);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   function scrollToSection(sectionId: string) {
     const element = document.getElementById(sectionId);
@@ -33,7 +42,7 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
       ${
         isScrolled
-          ? "shadow-glass border-b border-card-border backdrop-blur-glass"
+          ? "glass border-b border-card-border backdrop-blur-glass"
           : "bg-transparent"
       }
       
