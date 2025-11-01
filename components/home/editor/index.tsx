@@ -434,7 +434,6 @@ export function Editor() {
           </motion.div>
         </div>
       </div>
-      Editor
     </section>
   );
 }

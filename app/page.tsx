@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import { Editor } from "@/components/home/editor";
 import Features from "@/components/home/features";
 import { Hero } from "@/components/home/hero";
@@ -10,6 +11,7 @@ export default function Home() {
       <Features />
       <Pricing />
       <Editor />
+      <Footer />
     </div>
   );
 }
