@@ -56,7 +56,7 @@ export const authOptions: NextAuthOptions = {
           avatar: acc.picture!,
           plan: "Free",
           usageCount: 0,
-          usageLimit: 5,
+          usageLimit: 3,
         });
         return {
           id: acc.sub, // sub as iid for google auth
